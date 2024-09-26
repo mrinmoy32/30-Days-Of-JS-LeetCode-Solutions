@@ -68,3 +68,10 @@ class Calculator {
         return this.result
     }
 }
+
+const calc = new Calculator(10);
+console.log(calc.add(5).subtract(3).getResult()); // Output: 12
+
+/*
+In this example, add(5) and subtract(3) are called on the same calc object because each method returns the object itself, enabling the next method to be chained.
+*/
